@@ -3,23 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tools and Workflow Project</title>
+    <title>Team Project</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Tools and Workflow Project</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Our Project</h1>
     </header>
 
     <main>
         <section id="about">
-            <h2>About the Project</h2>
-            <p>This project is part of the Tools and Workflow subject for web design. It involves integrating GitHub, Trello, and Slack to manage tasks effectively.</p>
+            <h2>About Us</h2>
+            <p>We are a team of three working on web design projects together.</p>
+        </section>
+
+        <section id="tasks">
+            <h2>Our Tasks</h2>
+            <ul>
+                <li>Task 1: Initial setup of the project structure</li>
+                <li>Task 2: Styling the header and footer</li>
+                <li>Task 3: Adding media queries for responsiveness</li>
+                <li>Task 4: Create a contact form</li>
+                <li>Task 5: Implement navigation links</li>
+            </ul>
+        </section>
+
+        <section id="team">
+            <h2>Team Members</h2>
+            <div class="team-member">
+                <img src="member1.jpg" alt="Member 1">
+                <p>Member 1</p>
+            </div>
+            <div class="team-member">
+                <img src="member2.jpg" alt="Member 2">
+                <p>Member 2</p>
+            </div>
+            <div class="team-member">
+                <img src="member3.jpg" alt="Member 3">
+                <p>Member 3</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                
+                <input type="submit" value="Submit">
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Tools and Workflow Project</p>
+        <ul class="socials">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        <p>&copy; 2024 Team Project</p>
     </footer>
 </body>
 </html>
