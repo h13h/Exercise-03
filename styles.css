@@ -1,28 +1,33 @@
-body {
-    font-family: Arial, sans-serif;
+/* Basic reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+/* Header styling */
 header {
-    background: url('header-background.jpg') no-repeat center center/cover;
+    background-color: #0073e6;
     color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px 0;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
 nav ul li {
-    margin: 0 15px;
-    position: relative; /* Add relative positioning for dropdown */
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
@@ -30,126 +35,33 @@ nav ul li a {
     text-decoration: none;
 }
 
-.dropdown {
-    display: none; /* Hide the dropdown by default */
-    position: absolute; /* Position dropdown relative to the parent */
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-nav ul li:hover .dropdown {
-    display: block; /* Show dropdown on hover */
-}
-
-.dropdown ul {
-    list-style-type: none;
-    padding: 10px 0; /* Add padding for dropdown items */
-    margin: 0;
-}
-
-.dropdown ul li {
-    padding: 8px 12px; /* Add padding for each dropdown item */
-}
-
-.dropdown ul li:hover {
-    background-color: #ddd; /* Change background on hover */
-}
-
+/* Main content styling */
 main {
+    margin-top: 20px;
+}
+
+/* Intro section styling */
+.intro {
+    background-color: #fff;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-#calendar {
-    margin: 20px 0;
-}
 
-.calendar {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-}
-
-.month {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.date {
-    font-size: 1.2em;
-}
-
-.days, .dates {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-
-.days div, .dates div {
-    padding: 10px;
-    border: 1px solid #eee;
-}
-
-.today {
-    background-color: #ffa; /* Highlight today's date */
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin: 5px 0;
-}
-
-form input {
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-form input:hover {
-    background-color: #e0e0e0;
-}
-
+/* Footer styling */
 footer {
+    background-color: #0073e6;
+    color: white;
     text-align: center;
-    background-color: #333;
-    color: white;
     padding: 10px 0;
+    margin-top: 20px;
 }
 
-footer .socials {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-footer .socials li {
-    margin: 0 10px;
-}
-
-footer .socials li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer .socials li a:hover {
-    color: #ccc;
-}
-
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    footer {
-        font-size: 0.8em;
-    }
+footer p {
+    margin: 0;
 }
