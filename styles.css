@@ -52,6 +52,46 @@ main {
     margin-bottom: 20px;
 }
 
+/* To-do list styling */
+.todo-list {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list h2 {
+    color: #0073e6;
+}
+
+#todo-form {
+    margin-bottom: 15px;
+}
+
+#new-task {
+    padding: 8px;
+    width: 200px;
+}
+
+#tasks li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#tasks li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Calendar section styling */
+.calendar {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendar h2 {
+    color: #0073e6;
+}
 
 /* Footer styling */
 footer {
