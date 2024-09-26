@@ -12,6 +12,8 @@ document.getElementById('todo-form').addEventListener('submit', function(e) {
         // Append to the existing task list
         document.getElementById('tasks').appendChild(li);
 
+
+     
         // Clear the input field
         document.getElementById('new-task').value = '';
     }
